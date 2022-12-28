@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="font-montserrat">
     
     <header>
         <nav></nav>
@@ -25,8 +25,8 @@
             <div class="w-full h-3/4 ">
 
                 <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center">
-                    <input class="outline-none rounded-full py-3 px-5 shadow-sm " placeholder="San Francisco" type="search" name="" id="">
-                    <button class="w-36 rounded-full bg-white text-xl font-semibold p-4 text-primary ">
+                    <input class="outline-none rounded-full py-3 px-5 shadow-sm transition-all duration-500 focus-within:shadow-sm focus:ring-2 focus:w-11/12  " placeholder="San Francisco" type="search">
+                    <button class="w-48 rounded-full bg-white text-lg font-semibold p-4 text-primary transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:translate-y-1 hover:scale-110 ">
                         Explorar
                     </button>
                 </div>
@@ -41,7 +41,7 @@
 
             <h2 class="text-primary text-2xl font-semibold mb-6">Our Recomendations</h2>
 
-            <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-4">
+            <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-4 overflow-y-hidden">
                 <div class="card">
                     <div class="card_img-container bg-norway "></div>
                     <div class="bg-secondary card_bottom-text">
