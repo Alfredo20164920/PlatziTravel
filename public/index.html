@@ -6,15 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Platzi Travel</title>
 
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
     
-    <h1 
-        class="text-8xl text-slate-700"
-    >   
-        Platzi Travel
-    </h1>
+    <header>
+        <nav></nav>
+    </header>
+
+    <div id="tabBar"></div>
+
+    <main class="w-full h-screen">
+        <section id="home">
+            <div class="w-full h-3/4 ">
+
+                <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center">
+                    <input class="outline-none rounded-full py-3 px-5 shadow-sm " placeholder="San Francisco" type="search" name="" id="">
+                    <button class="w-36 rounded-full bg-white text-xl font-semibold p-4 text-primary ">
+                        Explorar
+                    </button>
+                </div>
+
+                <div class="w-full h-full">
+                    <img src="https://github.com/platzi/PlatziTravel/blob/main/public/img/sanFrancisco.jpg?raw=true" alt="San francisco"">
+                </div>
+                
+            </div>
+        </section>
+        <section id="recomendations"></section>
+        <section id="trendingStays"></section>
+    </main>
+
+    <footer>
+
+    </footer>
 
 </body>
 </html>
