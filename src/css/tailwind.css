@@ -15,7 +15,7 @@
 }
 
 h2 {
-  @apply text-primary text-2xl font-semibold mb-6;
+  @apply text-primary text-2xl font-semibold mb-6 dark:text-white;
 }
 
 .trendingCard_title {

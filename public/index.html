@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth dark">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,13 +18,13 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
-<body class="font-montserrat ">
+<body class="font-montserrat dark:bg-gray-900">
 
-    <nav class="hidden bg-white lg:h-16 lg:flex lg:flex-row lg:justify-between lg:items-center lg:px-6 lg:py-7">
+    <nav class="hidden bg-white lg:h-16 lg:w-full lg:flex lg:flex-row lg:justify-between lg:items-center lg:px-6 lg:py-7 dark:bg-gray-900 fixed z-10">
         
-        <h1 class="font-bold text-lg text-primary">Platzi Travel</h1>
+        <h1 class="font-bold text-lg text-primary dark:text-white">Platzi Travel</h1>
 
-        <div class="w-3/12 flex justify-between text-primary text-lg font-bold">
+        <div class="w-3/12 flex justify-between text-primary text-lg font-bold dark:text-white">
             <a href="#recomendations">Locations</a>
             <a href="#trending_stays">Stays</a>
             <a href="#faqs">FAQS</a>
@@ -33,15 +33,15 @@
 
         <div class="w-1/12 flex justify-between items-center ">
             <a href="#">
-                <ion-icon name="search" class="w-5 h-5 text-primary fill-current"></ion-icon>
+                <ion-icon name="search" class="w-5 h-5 text-primary dark:text-white  fill-current"></ion-icon>
             </a>
 
-            <button>
+            <button id="darkModeDesktop">
                 <ion-icon name="moon" class="w-5 h-5 text-primary fill-current"></ion-icon>
             </button>
 
             <a href="#">
-                <ion-icon name="person" class="w-5 h-5 text-gray-200 fill-current"></ion-icon>
+                <ion-icon name="person" class="w-5 h-5 text-gray-200 fill-current dark:text-white "></ion-icon>
             </a>
 
 
@@ -60,7 +60,7 @@
                         <h1 class="text-4xl ml-16 font-bold">Find More Locations like this</h1>
                     </div>
 
-                    <button class="w-48 rounded-full bg-white text-lg font-semibold p-4 text-primary transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:translate-y-1 hover:scale-110 lg:ml-16">
+                    <button class="w-48 rounded-full bg-white text-lg font-semibold p-4 text-primary transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:translate-y-1 hover:scale-110 lg:ml-16 dark:text-black">
                         Explorar
                     </button>
                 </div>
@@ -74,96 +74,96 @@
 
         <section class="px-4 py-7" id="recomendations">
 
-            <h2 class="text-primary text-2xl font-semibold mb-6">Our Recomendations</h2>
+            <h2 class="text-primary text-2xl font-semibold mb-6 dark:text-white">Our Recomendations</h2>
 
             <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-4 overflow-y-hidden">
                 <div class="card">
                     <div class="card_img-container bg-norway "></div>
-                    <div class="bg-secondary card_bottom-text">
+                    <div class="bg-secondary card_bottom-text dark:bg-gray-700" >
                         <p class="text-sm text-white font-bold py-2">Norway</p>
                         <p class="text-sm font-medium text-white">Beautiful landscape</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card_img-container bg-newyork "></div>
-                    <div class="bg-white card_bottom-text">
-                        <p class="text-sm text-tertiary font-bold py-2">New York</p>
-                        <p class="text-sm font-medium text-tertiary">Concrete jungle</p>
+                    <div class="bg-white card_bottom-text dark:bg-gray-800">
+                        <p class="text-sm text-tertiary dark:text-white font-bold py-2">New York</p>
+                        <p class="text-sm font-medium text-tertiary dark:text-white">Concrete jungle</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card_img-container bg-yosemite "></div>
-                    <div class="bg-secondary card_bottom-text">
+                    <div class="bg-secondary card_bottom-text dark:bg-gray-700" >
                         <p class="text-sm text-white font-bold py-2">Yosemite</p>
                         <p class="text-sm font-medium text-white">A break from the world</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card_img-container bg-seattle "></div>
-                    <div class="bg-white card_bottom-text">
-                        <p class="text-sm text-tertiary font-bold py-2">Seattle</p>
-                        <p class="text-sm font-medium text-tertiary">Big City</p>
+                    <div class="bg-white card_bottom-text dark:bg-gray-800">
+                        <p class="text-sm text-tertiary dark:text-white font-bold py-2">Seattle</p>
+                        <p class="text-sm font-medium text-tertiary dark:text-white">Big City</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card_img-container bg-switzerland "></div>
-                    <div class="bg-secondary card_bottom-text">
+                    <div class="bg-secondary card_bottom-text dark:bg-gray-700" >
                         <p class="text-sm text-white font-bold py-2">Switzerland</p>
                         <p class="text-sm font-medium text-white">Big City</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card_img-container bg-Bali "></div>
-                    <div class="bg-white card_bottom-text">
-                        <p class="text-sm text-tertiary font-bold py-2">Bali</p>
-                        <p class="text-sm font-medium text-tertiary">Concrete jungle</p>
+                    <div class="bg-white card_bottom-text dark:bg-gray-800">
+                        <p class="text-sm text-tertiary dark:text-white font-bold py-2">Bali</p>
+                        <p class="text-sm font-medium text-tertiary dark:text-white">Concrete jungle</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card_img-container bg-chicago "></div>
-                    <div class="bg-secondary card_bottom-text">
+                    <div class="bg-secondary card_bottom-text dark:bg-gray-700" >
                         <p class="text-sm text-white font-bold py-2">Chicago</p>
                         <p class="text-sm font-medium text-white">Beautiful landscape</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card_img-container bg-europe "></div>
-                    <div class="bg-white card_bottom-text">
-                        <p class="text-sm text-tertiary font-bold py-2">Europe</p>
-                        <p class="text-sm font-medium text-tertiary">Concrete jungle</p>
+                    <div class="bg-white card_bottom-text dark:bg-gray-800">
+                        <p class="text-sm text-tertiary dark:text-white font-bold py-2">Europe</p>
+                        <p class="text-sm font-medium text-tertiary dark:text-white">Concrete jungle</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card_img-container bg-iceland "></div>
-                    <div class="bg-secondary card_bottom-text">
+                    <div class="bg-secondary card_bottom-text dark:bg-gray-700" >
                         <p class="text-sm text-white font-bold py-2">Iceland</p>
                         <p class="text-sm font-medium text-white">Beautiful landscape</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card_img-container bg-miami "></div>
-                    <div class="bg-white card_bottom-text">
-                        <p class="text-sm text-tertiary font-bold py-2">Miami</p>
-                        <p class="text-sm font-medium text-tertiary">Concrete jungle</p>
+                    <div class="bg-white card_bottom-text dark:bg-gray-800">
+                        <p class="text-sm text-tertiary dark:text-white font-bold py-2">Miami</p>
+                        <p class="text-sm font-medium text-tertiary dark:text-white">Concrete jungle</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card_img-container bg-sanfranciscodesktop "></div>
-                    <div class="bg-secondary card_bottom-text">
+                    <div class="bg-secondary card_bottom-text dark:bg-gray-700" >
                         <p class="text-sm text-white font-bold py-2">San Francisco</p>
                         <p class="text-sm font-medium text-white">Beautiful landscape</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card_img-container bg-sydney "></div>
-                    <div class="bg-white card_bottom-text">
-                        <p class="text-sm text-tertiary font-bold py-2">Sydney</p>
-                        <p class="text-sm font-medium text-tertiary">Concrete jungle</p>
+                    <div class="bg-white card_bottom-text dark:bg-gray-800">
+                        <p class="text-sm text-tertiary dark:text-white font-bold py-2">Sydney</p>
+                        <p class="text-sm font-medium text-tertiary dark:text-white">Concrete jungle</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card_img-container bg-LA "></div>
-                    <div class="bg-secondary card_bottom-text">
+                    <div class="bg-secondary card_bottom-text dark:bg-gray-700" >
                         <p class="text-sm text-white font-bold py-2">Los Angeles</p>
                         <p class="text-sm font-medium text-white">Beautiful landscape</p>
                     </div>
@@ -175,7 +175,7 @@
         </section>
 
         <section id="trending_stays" class="flex flex-col w-full h-full items-center justify-center py-7 px-4">
-            <h2 class="self-start">Trending Stays</h2>
+            <h2 class="self-start dark:text-white">Trending Stays</h2>
             <div class="grid h-full w-full gap-4 grid-cols-1 grid-rows-3 lg:grid-rows-6 lg:grid-cols-3 lg:h-[1000px]">
 
                 <div class="px-6 py-10 col-span-1 row-span-1 rounded-lg bg-chicago bg-cover bg-center sm:col-span-3 sm:row-span-1 lg:row-span-2 lg:flex lg:flex-col lg:items-end lg:pr-20">
@@ -199,35 +199,35 @@
         </section>
 
         <section id="faqs" class="w-full h-full px-4 py-7">
-            <div class="w-full h-full flex flex-col gap-4">
+            <div class="w-full h-full flex flex-col gap-4 ">
                 <h2 class="mb-0">FAQS</h2>
                 <div>
-                    <p class="text-xl font-medium text-primary">Política de Cancelación</p>
-                    <p class="text-md pt-2">
+                    <p class="text-xl font-medium text-primary dark:text-white">Política de Cancelación</p>
+                    <p class="text-base pt-2 font-light dark:text-white">
                         Para estancias menores a una semana es importante avisar con 3 días de
                         anticipación, de caso contario será sancionado.
                     </p>
                 </div>
                 <div>
-                    <p class="text-xl font-medium text-primary">Métodos de pago</p>
-                    <p class="text-md pt-2">
+                    <p class="text-xl font-medium text-primary dark:text-white">Métodos de pago</p>
+                    <p class="text-md pt-2 dark:text-white">
                         Aceptamos distintos métodos de pago: VISA, MasterCard, American Express,
                         Paypal y Binance
                     </p>
                 </div>
                 <div>
-                    <p class="text-xl font-medium text-primary">Mascotas</p>
-                    <p class="text-md pt-2">El tema de las mascotas dependerá directamente del anfitrión.</p>
+                    <p class="text-xl font-medium text-primary dark:text-white">Mascotas</p>
+                    <p class="text-md pt-2 dark:text-white">El tema de las mascotas dependerá directamente del anfitrión.</p>
                 </div>
                 <div>
-                    <p class="text-xl font-medium text-primary">Información de Seguridad</p>
-                    <p class="text-md pt-2">
+                    <p class="text-xl font-medium text-primary dark:text-white">Información de Seguridad</p>
+                    <p class="text-md pt-2 dark:text-white">
                         Todas nuestras estancias cuentan con seguro en caso de accidentes
                     </p>
                 </div>
                 <div>
-                    <p class="text-xl font-medium text-primary">Estancias Largas</p>
-                    <p class="text-md pt-2">
+                    <p class="text-xl font-medium text-primary dark:text-white">Estancias Largas</p>
+                    <p class="text-md pt-2 dark:text-white">
                         Contamos con estancias de hasta 3 meses, en este caso es requerido un
                         anticipo con un monto del 50% del valor de la renta
                     </p>
@@ -236,7 +236,7 @@
         </section>
     </main>
 
-    <footer class="w-full h-auto bg-gray-50 px-4 py-7 space-y-2 mb-14">
+    <footer class="w-full h-auto bg-gray-50 px-4 py-7 space-y-2 mb-14 lg:mb-0">
 
         
         <h3 class="text-lg font-semibold text-gray-500">About Us</h3>
@@ -251,7 +251,7 @@
 
     </footer>
 
-    <div id="tab_bar" class="w-full h-16 bg-white fixed left-0 bottom-0 shadow-md flex justify-evenly items-center lg:hidden">
+    <div id="tab_bar" class="w-full h-16 bg-white fixed left-0 bottom-0 shadow-md flex justify-evenly items-center lg:hidden dark:bg-gray-700">
         <a href="#home">
             <ion-icon name="home" class="w-8 h-8 text-primary fill-current"></ion-icon>
         </a>
@@ -262,7 +262,7 @@
             <ion-icon name="heart" class="w-8 h-8 text-gray-200 fill-current"></ion-icon>
         </a>
 
-        <button>
+        <button id="darkModeMovil">
             <ion-icon name="moon" class="w-8 h-8 text-gray-200 fill-current"></ion-icon>
         </button>
 
@@ -270,6 +270,25 @@
             <ion-icon name="person" class="w-8 h-8 text-gray-200 fill-current"></ion-icon>
         </a>
     </div>
+
+
+    <script>
+        const htmlElement = document.querySelector('html');
+        const darkModeButtonMovil = document.querySelector('#darkModeMovil');
+        const darkModeButtonDesktop = document.querySelector('#darkModeDesktop');
+
+        darkModeButtonMovil.addEventListener('click', () => {
+            // htmlElement.classList.contains('dark') ? htmlElement.classList.remove('dark') : htmlElement.classList.add('dark');
+            htmlElement.classList.toggle('dark');
+        });
+
+        darkModeButtonDesktop.addEventListener('click', () => {
+            htmlElement.classList.contains('dark') ? htmlElement.classList.remove('dark') : htmlElement.classList.add('dark');
+        });
+
+
+
+    </script>
 
 </body>
 </html>
