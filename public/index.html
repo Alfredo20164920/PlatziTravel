@@ -1,24 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Platzi Travel</title>
 
+    <!-- Styles -->
     <link rel="stylesheet" href="../public/css/style.css">
 
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-</head>
-<body class="font-montserrat">
-    
-    <header>
-        <nav></nav>
-    </header>
 
-    <div id="tabBar"></div>
+    <!-- Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body class="font-montserrat ">
+
+    <nav></nav>
 
     <main class="w-full h-auto ">
         <section id="home">
@@ -140,7 +142,7 @@
 
         </section>
 
-        <section id="trendingStays " class="flex flex-col w-full h-full items-center justify-center py-7 px-4">
+        <section id="trending_stays" class="flex flex-col w-full h-full items-center justify-center py-7 px-4">
             <h2 class="self-start">Trending Stays</h2>
             <div class="grid h-full w-full grid-cols-1 gap-4  sm:grid-cols-3 sm:grid-rows-3">
                 <div class="px-6 py-10 col-span-1 row-span-3 rounded-lg bg-chicago bg-cover bg-center sm:col-span-3 sm:row-span-1">
@@ -199,9 +201,8 @@
             </div>
         </section>
     </main>
-    
 
-    <footer class="w-full h-auto bg-gray-50 px-4 py-7 space-y-2">
+    <footer class="w-full h-auto bg-gray-50 px-4 py-7 space-y-2 mb-14">
 
         
         <h3 class="text-lg font-semibold text-gray-500">About Us</h3>
@@ -215,6 +216,26 @@
     
 
     </footer>
+
+    <div id="tab_bar" class="w-full h-16 bg-white fixed left-0 bottom-0 shadow-md flex justify-evenly items-center">
+        <a href="#home">
+            <ion-icon name="home" class="w-8 h-8 text-primary fill-current"></ion-icon>
+        </a>
+        <a href="#trending_stays">
+            <ion-icon name="search" class="w-8 h-8 text-gray-200 fill-current"></ion-icon>
+        </a>
+        <a href="#recomendations">
+            <ion-icon name="heart" class="w-8 h-8 text-gray-200 fill-current"></ion-icon>
+        </a>
+
+        <button>
+            <ion-icon name="moon" class="w-8 h-8 text-gray-200 fill-current"></ion-icon>
+        </button>
+
+        <a href="">
+            <ion-icon name="person" class="w-8 h-8 text-gray-200 fill-current"></ion-icon>
+        </a>
+    </div>
 
 </body>
 </html>
