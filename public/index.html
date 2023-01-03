@@ -20,21 +20,53 @@
 </head>
 <body class="font-montserrat ">
 
-    <nav></nav>
+    <nav class="hidden bg-white lg:h-16 lg:flex lg:flex-row lg:justify-between lg:items-center lg:px-6 lg:py-7">
+        
+        <h1 class="font-bold text-lg text-primary">Platzi Travel</h1>
+
+        <div class="w-3/12 flex justify-between text-primary text-lg font-bold">
+            <a href="#recomendations">Locations</a>
+            <a href="#trending_stays">Stays</a>
+            <a href="#faqs">FAQS</a>
+            <a href="#locations">About us</a>
+        </div>
+
+        <div class="w-1/12 flex justify-between items-center ">
+            <a href="#">
+                <ion-icon name="search" class="w-5 h-5 text-primary fill-current"></ion-icon>
+            </a>
+
+            <button>
+                <ion-icon name="moon" class="w-5 h-5 text-primary fill-current"></ion-icon>
+            </button>
+
+            <a href="#">
+                <ion-icon name="person" class="w-5 h-5 text-gray-200 fill-current"></ion-icon>
+            </a>
+
+
+        </div>
+
+    </nav>
 
     <main class="w-full h-auto ">
         <section id="home">
             <div class="w-full h-3/4 ">
 
-                <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center">
-                    <input class="outline-none rounded-full py-3 px-5 shadow-sm transition-all duration-500 focus-within:shadow-sm focus:ring-2 focus:w-11/12  " placeholder="San Francisco" type="search">
-                    <button class="w-48 rounded-full bg-white text-lg font-semibold p-4 text-primary transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:translate-y-1 hover:scale-110 ">
+                <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center lg:space-y-0 lg:items-start lg:pt-48 lg:justify-start ">
+                    <input class="outline-none rounded-full py-3 px-5 shadow-sm transition-all duration-500 focus-within:shadow-sm focus:ring-2 focus:w-11/12 lg:hidden" placeholder="San Francisco" type="search">
+
+                    <div class="hidden h-auto lg:w-2/3 lg:flex pb-6 first-letter:">
+                        <h1 class="text-4xl ml-16 font-bold">Find More Locations like this</h1>
+                    </div>
+
+                    <button class="w-48 rounded-full bg-white text-lg font-semibold p-4 text-primary transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:translate-y-1 hover:scale-110 lg:ml-16">
                         Explorar
                     </button>
                 </div>
 
-                <div class="w-full h-full">
-                    <img src="https://github.com/platzi/PlatziTravel/blob/main/public/img/sanFrancisco.jpg?raw=true" alt="San francisco"">
+                <div class="w-full h-full lg:h-[500px] lg:bg-sanfranciscodesktop lg:bg-cover lg:bg-center">
+                    <img class="lg:hidden" src="https://github.com/platzi/PlatziTravel/blob/main/public/img/sanFrancisco.jpg?raw=true" alt="San francisco"">
                 </div>
                 
             </div>
@@ -144,23 +176,25 @@
 
         <section id="trending_stays" class="flex flex-col w-full h-full items-center justify-center py-7 px-4">
             <h2 class="self-start">Trending Stays</h2>
-            <div class="grid h-full w-full grid-cols-1 gap-4  sm:grid-cols-3 sm:grid-rows-3">
-                <div class="px-6 py-10 col-span-1 row-span-3 rounded-lg bg-chicago bg-cover bg-center sm:col-span-3 sm:row-span-1">
+            <div class="grid h-full w-full gap-4 grid-cols-1 grid-rows-3 lg:grid-rows-6 lg:grid-cols-3 lg:h-[1000px]">
+
+                <div class="px-6 py-10 col-span-1 row-span-1 rounded-lg bg-chicago bg-cover bg-center sm:col-span-3 sm:row-span-1 lg:row-span-2 lg:flex lg:flex-col lg:items-end lg:pr-20">
                     <p class="trendingCard_title">Chicago</p>
                     <p class="trendingCard_subtitle">2 rooms, bathroom and kitchen.</p>
                 </div>
-                <div class="px-6 py-10 row-span-3 rounded-lg bg-LA bg-cover bg-center sm:row-span-2">
+                <div class="px-6 py-10 row-span-1 rounded-lg bg-LA bg-cover bg-center sm:row-span-2 lg:row-span-4 lg:flex lg:flex-col lg:items-end lg:pr-20">
                     <p class="trendingCard_title">Los Angeles</p>
                     <p class="trendingCard_subtitle">4 rooms, 3 bathrooms,  kitchen and private pool.</p>
                 </div>
-                <div class="px-6 py-10 col-span-1 row-span-3 rounded-lg bg-miami bg-cover bg-center sm:col-span-2 sm:row-span-1">
+                <div class="px-6 py-10 col-span-1 row-span-3 rounded-lg bg-miami bg-cover bg-center sm:col-span-2 sm:row-span-1 lg:row-span-2 lg:flex lg:flex-col lg:items-end lg:pr-20">
                     <p class="trendingCard_title">Miami</p>
                     <p class="trendingCard_subtitle">3 rooms, 2 bathrooms,  kitchen and amazing sea view.</p>
                 </div>
-                <div class="px-6 py-10 col-span-1 row-span-3 rounded-lg bg-Bali bg-cover bg-center sm:col-span-2 sm:row-span-1">
+                <div class="px-6 py-10 col-span-1 row-span-3 rounded-lg bg-Bali bg-cover bg-center sm:col-span-2 sm:row-span-1 lg:row-span-2 lg:flex lg:flex-col lg:items-end lg:pr-20">
                     <p class="trendingCard_title">Bali</p>
                     <p class="trendingCard_subtitle">2 rooms, 2 bathrooms,  kitchen and private pool.</p>
                 </div>
+
             </div>
         </section>
 
@@ -217,7 +251,7 @@
 
     </footer>
 
-    <div id="tab_bar" class="w-full h-16 bg-white fixed left-0 bottom-0 shadow-md flex justify-evenly items-center">
+    <div id="tab_bar" class="w-full h-16 bg-white fixed left-0 bottom-0 shadow-md flex justify-evenly items-center lg:hidden">
         <a href="#home">
             <ion-icon name="home" class="w-8 h-8 text-primary fill-current"></ion-icon>
         </a>
